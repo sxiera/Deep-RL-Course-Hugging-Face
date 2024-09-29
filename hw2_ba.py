@@ -1,9 +1,22 @@
+"""
+Program Name    : hw2_ba.py
+Author          : Bima Aristo
+Date            : 2024-09-29
+Description     : Simple python program for calculating the averages and individual scores for students in the "Computational Intelligence"
+                  class in Debugging and Full Execution mode. This code is developed by Bima Aristo and with guidance from several online sources:
+                  - PyPI. (n.d.). Random Names module. https://pypi.org/project/names/ (Accessed on 28 September 2024).
+                  - NumPy. (n.d.). Random Normal Distribution. https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html 
+                  (Accessed on 27 September 2024).
+                  - Stack Overflow. (n.d.). How do I get time of a Python program execution? 
+                  https://stackoverflow.com/questions/1557571/how-do-i-get-time-of-a-python-programs-execution (Accessed on 27 September 2024).
+"""
+
 import names as nm
 import numpy as np
 import time
 import pandas as pd
 
-# Random English Name Generator using names Module
+# Random English Name Generator using names Modulede
 def generate_random_name():
     return nm.get_full_name()
 
@@ -116,7 +129,10 @@ def debug_mode(filename):
     class_average = total_class_grade / len(data_lines)
     print ('\n---------')
     print('\nSummary')
-    print("Class Participation :{num_students} Students")
+
+    total_students = len(students)
+    print (total_students)
+    print(f"Class Participation: {total_students}Students")
     print(f"Class Average Grade: {class_average:.2f}")
 
 # Mode Selection
