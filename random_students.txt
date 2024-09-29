@@ -1,0 +1,11 @@
+Name,Proposal_Presentation,Progress_Presentation,Final_Presentation,Final_Report,Homeworks,3D_Games,Final_Exam
+Brian Sims,92.86,71.62,90.67,91.31,68.72,72.49,79.29
+Deborah Scott,87.53,81.17,90.63,88.48,74.87,98.90,62.06
+Lori Middaugh,93.81,83.40,80.79,85.58,83.03,78.57,71.94
+John Woodhams,90.12,76.10,79.45,88.05,72.98,89.99,87.44
+Leslie Kanter,85.65,89.09,78.02,88.43,79.18,92.30,72.42
+Erica Hill,84.40,94.07,80.45,94.35,88.21,65.80,87.23
+Charles Lynch,92.30,85.64,78.64,87.95,66.87,73.26,85.50
+James Hererra,91.29,90.59,65.71,85.52,74.41,67.58,97.74
+Annette Page,76.19,100.00,77.25,84.27,78.89,77.01,66.49
+Mark Richman,94.17,87.37,83.86,87.53,73.25,75.45,74.72
