@@ -131,8 +131,7 @@ def debug_mode(filename):
     print('\nSummary')
 
     total_students = len(students)
-    print (total_students)
-    print(f"Class Participation: {total_students}Students")
+    print(f"Class Participation: {total_students} Students")
     print(f"Class Average Grade: {class_average:.2f}")
 
 # Mode Selection
