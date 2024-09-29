@@ -133,7 +133,7 @@ def debug_mode(filename):
                 print(f"Only {len(data_lines)} students available in the data file. Stopping computation.")
                 break
     # Summary
-    class_average = total_class_grade / len(data_lines)
+    class_average = total_class_grade / len(num_students)
     print ('\n---------')
     print('\nSummary')
 
