@@ -104,27 +104,34 @@ def debug_mode(filename):
     data_lines = lines[1:]  # Skip header
     total_class_grade = 0
     students = []
+    
+    num_students = int(input("Enter the number of students to compute for scores: "))
 
-    for line in data_lines:
-        row = line.strip().split(',')
-        grades = {
-            'Proposal Presentation': float(row[1]),
-            'Progress Presentation': float(row[2]),
-            'Final Presentation': float(row[3]),
-            'Final Report': float(row[4]),
-            'Homeworks': float(row[5]),
-            '3D Games': float(row[6]),
-            'Final Exam': float(row[7])
-        }
-        student = {
-            'Name': row[0],
-            'Grades': grades,
-            'Total Grade': calculate_grade(grades)
-        }
-        students.append(student)
-        total_class_grade += student['Total Grade']
-        show_results(student)
-
+    for i in range(num_students):
+            # Check the Data
+            if i < len(data_lines):
+                line = data_lines[i]
+                row = line.strip().split(',')
+                grades = {
+                    'Proposal Presentation': float(row[1]),
+                    'Progress Presentation': float(row[2]),
+                    'Final Presentation': float(row[3]),
+                    'Final Report': float(row[4]),
+                    'Homeworks': float(row[5]),
+                    '3D Games': float(row[6]),
+                    'Final Exam': float(row[7])
+                }
+                student = {
+                    'Name': row[0],
+                    'Grades': grades,
+                    'Total Grade': calculate_grade(grades)
+                }
+                students.append(student)
+                total_class_grade += student['Total Grade']
+                show_results(student)
+            else:
+                print(f"Only {len(data_lines)} students available in the data file. Stopping computation.")
+                break
     # Summary
     class_average = total_class_grade / len(data_lines)
     print ('\n---------')
